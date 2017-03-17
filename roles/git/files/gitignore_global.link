@@ -50,7 +50,3 @@ _sandbox
 
 .konchrc
 .scratch
-
-### Python ###
-.venv
-docs/_build
