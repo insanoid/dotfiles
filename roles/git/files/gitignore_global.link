@@ -50,3 +50,6 @@ _sandbox
 
 .konchrc
 .scratch
+
+### JetBrains ###
+.idea
