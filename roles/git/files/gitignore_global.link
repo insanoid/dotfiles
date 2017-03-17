@@ -33,4 +33,7 @@ _sandbox
 
 .konchrc
 
+### virtualenv ###
+.venv
+
 .scratch
