@@ -33,8 +33,9 @@ _sandbox
 
 .konchrc
 
-### virtualenv ###
+### Python ###
 .venv
+docs/_build
 
 ### JetBrains ###
 .idea
