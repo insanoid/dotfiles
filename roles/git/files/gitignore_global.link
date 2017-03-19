@@ -41,7 +41,16 @@ docs/_build
 ### JetBrains ###
 .idea
 
+# Sandbox for notes, throwaway scripts, etc.
+_sandbox
+
+.ipynb_checkpoints
+
+.xmark.*
+
+.konchrc
 .scratch
 
-### virtualenv ###
+### Python ###
 .venv
+docs/_build
