@@ -10,7 +10,13 @@ alias nt="nosetests"
 alias mn="python manage.py"
 alias getpip="wget https://bootstrap.pypa.io/get-pip.py && python get-pip.py && rm get-pip.py"
 
-alias pf='pip freeze'
 alias pfg='pip freeze | rg -i'
 alias pv='pyenv version'
 alias pvs='pyenv versions'
+
+# My aliases
+alias grpip="pip3 freeze | rg -i "
+alias grpip2="pip2 freeze | rg -i "
+alias pf='pip3 freeze'
+alias pf2='pip2 freeze'
+alias pf3='pip3 freeze'
