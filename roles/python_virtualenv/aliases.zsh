@@ -16,3 +16,6 @@ alias grpip2="pip2 freeze | rg -i "
 alias pf='pip3 freeze'
 alias pf2='pip2 freeze'
 alias pf3='pip3 freeze'
+
+alias pv='pyenv version'
+alias pvs='pyenv versions'

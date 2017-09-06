@@ -35,6 +35,7 @@ _sandbox
 
 ### Python ###
 .venv
+.python-version
 docs/_build
 
 ### JetBrains ###
