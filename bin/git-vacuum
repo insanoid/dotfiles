@@ -23,6 +23,7 @@ _git_exec_command 'git fetch origin --prune'
 
 # 3. Remove local branches that were already merged
 _git_exec_command 'git-bclean'
+
 #_git_exec_command 'git fsck'
 #_git_exec_command 'git gc --prune=now'
 

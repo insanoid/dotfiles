@@ -1,5 +1,6 @@
 alias g="git"
 alias gf="git flow"
+
 # Some shortcuts I used with Oh My Zsh
 alias gaa='git add --all'
 alias gcd='git checkout develop'
