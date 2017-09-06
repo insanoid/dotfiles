@@ -23,4 +23,5 @@ alias h='hello home'
 alias ef='hello work'
 alias h='hello home'
 
-alias grepalias='alias | grep '
+alias ef='hello work'
+alias h='hello home'
