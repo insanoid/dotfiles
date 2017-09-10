@@ -1,21 +1,29 @@
-- name: "Install Python {{ latest_python_36 }}"
-  pyenv:
-    version: "{{ latest_python_36 }}"
+- name: Get latest Python 3.6 version
+  shell: ﻿pyenv install --list | cut -b 3- | grep -E '^3\.6\.' | tail -n 1
+  register: latest_python_36
 
-- name: "Install Python {{ latest_python_35 }}"
+- name: "Install Python {{ latest_python_36.stdout }}"
   pyenv:
-    version: "{{ latest_python_35 }}"
+    version: "{{ latest_python_36.stdout }}"
+
+- name: Get latest Python 3.5 version
+  shell: ﻿pyenv install --list | cut -b 3- | grep -E '^3\.5\.' | tail -n 1
+  register: latest_python_35
+
+- name: "Install Python {{ latest_python_35.stdout }}"
+  pyenv:
+    version: "{{ latest_python_35.stdout }}"
 
 - name: virtualenv for Jupyter
   pyenv:
     subcommand: virtualenv
-    version: "{{ latest_python_36 }}"
+    version: "{{ latest_python_36.stdout }}"
     virtualenv_name: jupyter3
 
 - name: virtualenv for Python 3 tools
   pyenv:
     subcommand: virtualenv
-    version: "{{ latest_python_36 }}"
+    version: "{{ latest_python_36.stdout }}"
     virtualenv_name: tools3
 
 - name: Install jupyter
@@ -26,8 +34,6 @@
 
 - name: Run ipykernel module
   command: "{{ pyenv_root }}/versions/jupyter3/bin/python -m ipykernel install --user"
-  args:
-    creates: "~/Library/Jupyter/kernels/python3"
 
 - name: Install youtube-dl
   pip:
