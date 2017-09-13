@@ -28,4 +28,3 @@
     - fzf
     - gnome_do
     - {role: osx, when: ansible_os_family == "Darwin"}
-    - eatfirst
