@@ -62,7 +62,6 @@ osx_cask_packages:
   - flux
   - appcleaner
   - raindropio
-  - alfred
   - spectacle
 
   # E-mail
