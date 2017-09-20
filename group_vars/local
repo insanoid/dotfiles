@@ -63,6 +63,7 @@ osx_cask_packages:
   - appcleaner
   - raindropio
   - spectacle
+  - the-unarchiver
 
   # E-mail
   - mia-for-gmail
