@@ -43,6 +43,7 @@ osx_homebrew_packages:
   - diff-so-fancy
   - rename
   - docker-clean
+  - pgbadger
 
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
