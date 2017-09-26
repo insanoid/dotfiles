@@ -21,7 +21,7 @@ db-restore() {
 }
 
 db-psql () {
-  docker exec -it local_postgres psql -h postgres -U postgres $*
+  docker exec -it local_postgres psql -U postgres $*
 }
 
 # If the real psql client is not installed on this host, create an alias
