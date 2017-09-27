@@ -19,9 +19,3 @@ alias resize="mogrify -resize"
 
 alias ef='hello work'
 alias h='hello home'
-
-alias ef='hello work'
-alias h='hello home'
-
-alias ef='hello work'
-alias h='hello home'
