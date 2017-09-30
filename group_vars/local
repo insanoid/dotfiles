@@ -88,7 +88,8 @@ osx_cask_packages:
 
   # Images
   - imageoptim  # optimizing images
-  - kap  # capturing gifs
+  - licecap  # capturing gifs
+
   # Notetaking
   - nvalt
   - skitch

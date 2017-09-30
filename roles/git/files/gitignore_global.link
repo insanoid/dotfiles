@@ -24,16 +24,6 @@ Icon
 .autoenv.zsh
 .ropeproject
 
-# Sandbox for notes, throwaway scripts, etc.
-_sandbox
-
-.ipynb_checkpoints
-
-.xmark.*
-
-.konchrc
-
-
 ### Python ###
 .venv
 .python-version
@@ -51,6 +41,3 @@ _sandbox
 
 .konchrc
 .scratch
-
-### JetBrains ###
-.idea
