@@ -10,16 +10,12 @@
     - git
     - package_manager
     - {role: zsh, tags: ['bootstrap']}
-    - {role: ~/.ansible/roles/mongrelion.docker,
-      become: true,
-      become_user: root,
-      tags: ['bootstrap']}
-    - ~/.ansible/roles/andrewrothstein.docker-compose
+    - docker
     - vim
     - python_pyenv
     - python_personal
     - python_eatfirst
-    - {role: hub, tags: hub}
+    - hub
     - zsh-autoenv
     - rg
     - exa

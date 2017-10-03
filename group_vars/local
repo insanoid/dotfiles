@@ -104,4 +104,10 @@ osx_cask_packages:
 
 # APT packages that don't get installed by a role
 apt_packages:
+  - curl
+  - wget
+  - htop
+  - lsof
+  - strace
+  - gnupg-agent
   - shotwell
