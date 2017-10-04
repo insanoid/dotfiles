@@ -1,2 +1,5 @@
+# Change dir to read the correct ansible.cfg
+cd ~/dotfiles
+
 echo "Updating local dev environment..."
 ansible-playbook -i ~/dotfiles/hosts ~/dotfiles/local_env.yml --skip-tags "bootstrap" $*

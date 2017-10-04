@@ -17,3 +17,29 @@
   command: "pyenv local {{ env }} {{ local }}"
   args:
     chdir: "{{ root }}/{{ dir }}"
+
+- name: "{{ dir }}: Check .env file"
+  stat:
+    path: "{{ dotfiles_home }}_private/{{ dir }}/.env.link"
+  register: env_link
+
+- name: "{{ dir }}: Link .env file"
+  file:
+    src: "{{ env_link.stat.path }}"
+    dest: "{{ root }}/{{ dir }}/.env"
+    state: link
+    force: yes
+  when: env_link.stat.exists
+
+- name: "{{ dir }}: Check .autoenv file"
+  stat:
+    path: "{{ dotfiles_home }}_private/{{ dir }}/.autoenv.link"
+  register: autoenv_link
+
+- name: "{{ dir }}: Link .autoenv file"
+  file:
+    src: "{{ autoenv_link.stat.path }}"
+    dest: "{{ root }}/{{ dir }}/.autoenv"
+    state: link
+    force: yes
+  when: autoenv_link.stat.exists
