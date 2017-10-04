@@ -17,6 +17,7 @@
   command: "pyenv local {{ env }} {{ local }}"
   args:
     chdir: "{{ root }}/{{ dir }}"
+    creates: "{{ root }}/{{ dir }}/.python-version"
 
 - name: "{{ dir }}: Check .env file"
   stat:

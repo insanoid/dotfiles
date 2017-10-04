@@ -7,20 +7,20 @@
   environment:
     PYENV_ROOT: "{{ pyenv_root }}"
   roles:
-    - git
+    - {role: git, tags: vcs}
     - package_manager
-    - {role: zsh, tags: bootstrap}
-    - docker
+    - {role: zsh, tags: shell, bootstrap}
+    - {role: docker, tags: bootstrap}
     - vim
     - python_pyenv
-    - hub
-    - zsh-autoenv
-    - rg
-    - exa
-    - ccat
-    - tmux
-    - fzf
-    - gnome_do
+    - {role: hub, tags: vcs}
+    - {role: zsh-autoenv, tags: shell}
+    - {role: rg, tags: tool}
+    - {role: exa, tags: tool}
+    - {role: ccat, tags: tool}
+    - {role: tmux, tags: tool}
+    - {role: fzf, tags: tool}
+    - {role: gnome_do, tags: tool}
     - {role: osx, when: ansible_os_family == "Darwin"}
-    - andreoliwa
-    - eatfirst
+    - {role: andreoliwa, tags: personal}
+    - {role: eatfirst, tags: personal}
