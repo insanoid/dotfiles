@@ -23,8 +23,9 @@ prerequisites (install these first)
 -----------------------------------
 
 - ansible >= 2.4 (on Linux, [get the latest PPA] (http://docs.ansible.com/ansible/latest/intro_installation.html#installing-the-control-machine))
-- homebrew (If on Mac OSX)
-- git (homebrew installable on Mac OSX)
+- homebrew (If on macOS)
+- git (homebrew installable on macOS)
+- Latest version of Xcode (If on macOS)
 
 install
 -------
