@@ -1,5 +1,5 @@
 # Installation
-- include: "{{ ansible_os_family | lower }}.yml"
+- include_tasks: "{{ ansible_os_family | lower }}.yml"
 
 # Plugin manager
 - name: Makes sure autoload directory exists
