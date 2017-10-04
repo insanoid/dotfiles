@@ -9,12 +9,10 @@
   roles:
     - git
     - package_manager
-    - {role: zsh, tags: ['bootstrap']}
+    - {role: zsh, tags: bootstrap}
     - docker
     - vim
     - python_pyenv
-    - python_personal
-    - python_eatfirst
     - hub
     - zsh-autoenv
     - rg
@@ -24,3 +22,5 @@
     - fzf
     - gnome_do
     - {role: osx, when: ansible_os_family == "Darwin"}
+    - andreoliwa
+    - eatfirst

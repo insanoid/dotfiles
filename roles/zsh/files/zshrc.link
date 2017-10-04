@@ -1,10 +1,11 @@
 #!/usr/bin/env zsh
 # shortcut to this dotfiles path is $ZSH
 export ZSH=$HOME/dotfiles
+export DOTFILES_PRIVATE=$HOME/dotfiles_private
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+config_files=($ZSH/**/*.zsh $DOTFILES_PRIVATE/**/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}

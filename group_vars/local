@@ -10,6 +10,9 @@ dotfiles_home: "{{dotfiles_user_home}}/dotfiles"
 # Python tasks need the PYENV_ROOT environment variable set with this value
 pyenv_root: "{{ dotfiles_user_home }}/.pyenv"
 
+# Root directory for projects
+project_root: "{{ dotfiles_user_home }}/Code"
+
 # Name used in commit messages
 full_name: Wagner Augusto Andreoli
 # Git

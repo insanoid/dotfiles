@@ -1,0 +1,19 @@
+- name: "{{ dir }}: git clone {{ repo }} {{ root }}/{{ dir }} (update: {{ update }})"
+  git:
+    repo: "{{ repo }}"
+    dest: "{{ root }}/{{ dir }}"
+    clone: yes
+    update: "{{ update }}"
+
+- name: "{{ dir }}: Create virtualenv {{ env }} with Python {{ version }}"
+  when: create_env
+  pyenv:
+    subcommand: virtualenv
+    version: "{{ version }}"
+    virtualenv_name: "{{ env }}"
+
+- name: "{{ dir }}: pyenv local {{ env }} {{ local }}"
+  when: create_env
+  command: "pyenv local {{ env }} {{ local }}"
+  args:
+    chdir: "{{ root }}/{{ dir }}"

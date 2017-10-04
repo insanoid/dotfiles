@@ -1,4 +1,4 @@
 dependencies:
-  - { role: suzuki-shunsuke.pyenv, pyenv_is_dependencies_installed: yes, tags: ['bootstrap'] }
+  - { role: suzuki-shunsuke.pyenv, pyenv_is_dependencies_installed: yes, tags: bootstrap }
   - { role: suzuki-shunsuke.pyenv-virtualenv }
   - { role: suzuki-shunsuke.pyenv-module }
