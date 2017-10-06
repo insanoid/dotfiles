@@ -91,7 +91,6 @@ osx_cask_packages:
   - licecap  # capturing gifs
   # Notetaking
   - nvalt
-  - skitch
   - atom
   # Fonts
   - font-ubuntu
@@ -112,3 +111,9 @@ apt_packages:
   - strace
   - gnupg-agent
   - shotwell
+
+# Mac-App-Store-only apps to be installed with mas
+# Use App IDs found with `mas search <name>`
+osx_mas_packages:
+  - 585829637  # Todoist
+  - 540348655  # Monosnap
