@@ -65,7 +65,7 @@ osx_cask_packages:
   - teamviewer
   # Utilities
   - iterm2
-  - caffeine
+  - keepingyouawake  # maintained caffeinate wrapper
   - flux
   - appcleaner
   - raindropio
