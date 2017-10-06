@@ -55,10 +55,10 @@ osx_homebrew_packages:
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
   # Browsers
+  - firefoxdeveloperedition
   - google-chrome
   - opera
   - brave
-  - firefoxdeveloperedition
   # Network
   - filezilla
   - ngrok
