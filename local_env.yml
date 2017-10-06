@@ -21,6 +21,7 @@
     - {role: tmux, tags: tool}
     - {role: fzf, tags: tool}
     - {role: gnome_do, tags: tool}
+    - {role: defaultbrowser, tags: [tool]}
     - {role: osx, when: ansible_os_family == "Darwin"}
     - {role: andreoliwa, tags: personal}
     - {role: eatfirst, tags: personal}
