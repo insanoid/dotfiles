@@ -10,6 +10,8 @@ alias pg='ps -ef | grep'
 alias lj='jobs'
 alias dil='doitlive'
 alias dilp='doitlive play'
+alias l='ls -1a'
+alias la='ls -la'
 
 alias reload!='. ~/.zshrc'
 alias vi="vim"
