@@ -54,6 +54,7 @@ osx_cask_packages:
   - google-chrome
   - opera
   - brave
+  - firefoxdeveloperedition
 
   # Network
   - filezilla
