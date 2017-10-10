@@ -109,7 +109,9 @@ osx_cask_packages:
 # APT packages that don't get installed by a role
 apt_packages:
   - curl
+  - dos2unix
   - wget
+  - gnupg2
   - htop
   - lsof
   - strace
