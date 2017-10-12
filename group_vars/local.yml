@@ -116,4 +116,3 @@ apt_packages:
 # Use App IDs found with `mas search <name>`
 osx_mas_packages:
   - 585829637  # Todoist
-  - 540348655  # Monosnap
