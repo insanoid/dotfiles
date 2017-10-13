@@ -14,7 +14,7 @@ git_email: karthikeyaudupa@gmail.com
 
 # GPG Key ID used to sign git commits
 # See https://github.com/pstadler/keybase-gpg-github setup instructions
-git_signing_key: 6F84DBFC
+# git_signing_key: 6F84DBFC
 
 # Vim
 vim_install_plugins: no
@@ -47,11 +47,14 @@ osx_cask_packages:
   - ngrok
   - nordvpn
   - transmission
+  - vnc-viewer
+  - tunnelblick
   # Utilities
   - iterm2
   - appcleaner
   - raindropio
   - the-unarchiver
+  - daisydisk
   - java
   - node
   - alfred
@@ -62,7 +65,8 @@ osx_cask_packages:
   - vysor
   - android-file-transfer
   - zoomus
-  - vnc-viewer
+  # Docker
+  - docker
   # Vagrant/Virtualbox
   - virtualbox
   # Chat
@@ -76,7 +80,6 @@ osx_cask_packages:
   - vlc
   - beardedspice
   # Notetaking
-  - nvalt
   - atom
   # Fonts
   - font-ubuntu
@@ -118,3 +121,25 @@ osx_mas_packages:
   - 1094255754 # Outbank: Intelligent Banking
   - 458866234  # Texpad : LaTeX editor
   - 408981434  # iMovie
+  - 497799835  # Xcode - to keep it updated
+
+# Node utilities
+npm_global_packages:
+  - webpack
+  - eslint
+  - eslint-config-airbnb
+  - eslint-plugin-react
+  - babel-eslint
+
+# Ruby tools, mostly iOS dev stuff.
+ruby_global_gems:
+  - travis
+  - CFPropertyList
+  - cocoapods
+  - fastlane
+  - fuzzy_match
+  - i18n
+  - rake
+  - xcodeproj
+  - bundler
+  - openssl
