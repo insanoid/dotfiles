@@ -22,6 +22,7 @@ vim_install_plugins: no
 # Utilities that don't get installed by a role
 osx_homebrew_packages:
   - curl
+  - openssl
   - wget
   - tree
   - terminal-notifier
@@ -31,6 +32,7 @@ osx_homebrew_packages:
   - gpg
   - ctop
   - tldr # Simplified manual pages.
+  - node
   # iOS Toolchains
   - swiftlint
   - tailor
@@ -38,8 +40,9 @@ osx_homebrew_packages:
 
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
+  - java
   # Browsers
-  - firefoxdeveloperedition
+  - firefox
   - google-chrome
   - opera
   # Network
@@ -55,8 +58,6 @@ osx_cask_packages:
   - raindropio
   - the-unarchiver
   - daisydisk
-  - java
-  - node
   - alfred
   - atom
   - dashlane
@@ -67,8 +68,7 @@ osx_cask_packages:
   - zoomus
   # Docker
   - docker
-  # Vagrant/Virtualbox
-  - virtualbox
+#  - virtualbox # fails to instal..
   # Chat
   - slack
   - telegram
@@ -96,8 +96,9 @@ osx_cask_packages:
   - wwdc
   # Development
   - tower
-  - git-desktop
-  - mactex
+  - github-desktop
+  - visual-studio-code 
+# - mactex
   - hockey
   - cocoarestclient
   - weka
@@ -119,9 +120,9 @@ osx_mas_packages:
   - 1091189122 # Bear
   - 404010395  # TextWrangler
   - 1094255754 # Outbank: Intelligent Banking
-  - 458866234  # Texpad : LaTeX editor
   - 408981434  # iMovie
   - 497799835  # Xcode - to keep it updated
+#  - 458866234  # Texpad : LaTeX editor (fails to install)
 
 # Node utilities
 npm_global_packages:

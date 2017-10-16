@@ -7,10 +7,21 @@
 - [Fork](https://github.com/sloria/dotfiles/fork) this repo.
 - Clone your fork.
 
+
+Getting Started:
+
+1. Install Homebrew (`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`)
+2. Install Xcode
+3. Run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
+4. Install Git `brew install git`
+5. Install ansible - `brew install ansible`
+6. Install java `Brew cask install java` (depends on your setup)
+7. Run the script `CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" ./bin/dot-bootstrap`
+
 ```bash
 # Replace git url with your fork
 # NOTE: It is important that you clone to ~/dotfiles
-$ git clone https://github.com/YOU/dotfiles.git ~/dotfiles
+$ git clone https://github.com/insanoid/dotfiles.git ~/dotfiles
 $ cd ~/dotfiles
 ```
 

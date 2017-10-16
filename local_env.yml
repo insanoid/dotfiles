@@ -19,3 +19,5 @@
     - {role: defaultbrowser, tags: [tool]}
     - {role: osx, when: ansible_os_family == "Darwin"}
     - {role: secrets, tags: [access, bootstrap]}
+    - {role: ruby, tags: [tool]}
+    - {role: node, tags: [tool]}
