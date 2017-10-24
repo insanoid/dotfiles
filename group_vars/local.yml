@@ -75,6 +75,7 @@ osx_cask_packages:
   - skype
   # Backup/storage
   - dropbox
+  - google-drive-file-stream
   # Media/Music
   - spotify
   - vlc
@@ -97,11 +98,12 @@ osx_cask_packages:
   # Development
   - tower
   - github-desktop
-  - visual-studio-code 
+  - visual-studio-code
 # - mactex
   - hockey
   - cocoarestclient
   - weka
+  - texpad
 
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
@@ -131,6 +133,7 @@ npm_global_packages:
   - eslint-config-airbnb
   - eslint-plugin-react
   - babel-eslint
+  - gulp
 
 # Ruby tools, mostly iOS dev stuff.
 ruby_global_gems:
