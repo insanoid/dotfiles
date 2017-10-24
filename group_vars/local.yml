@@ -124,7 +124,6 @@ osx_mas_packages:
   - 1094255754 # Outbank: Intelligent Banking
   - 408981434  # iMovie
   - 497799835  # Xcode - to keep it updated
-#  - 458866234  # Texpad : LaTeX editor (fails to install)
 
 # Node utilities
 npm_global_packages:
