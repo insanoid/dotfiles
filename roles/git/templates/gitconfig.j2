@@ -4,7 +4,7 @@
         name = {{ full_name }}
         email = {{ git_email }}
 {% if git_signing_key %}
-        signingkey = {{ git_signing_key }}
+        signingkey = ''
 {% endif %}
 {% if ansible_os_family == 'Darwin' %}
 [credential]
@@ -79,7 +79,7 @@
         user = {{ git_user }}
 {% if git_signing_key %}
 [commit]
-        gpgsign = true
+        gpgsign = false
 {% endif %}
 
 {% if ansible_os_family == 'Debian' %}
