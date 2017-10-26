@@ -37,6 +37,7 @@ osx_homebrew_packages:
   - swiftlint
   - tailor
   - xctool
+  - hub
 
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
