@@ -99,7 +99,6 @@ osx_cask_packages:
   # Development
   - tower
   - github-desktop
-  - visual-studio-code
 # - mactex
   - hockey
   - cocoarestclient

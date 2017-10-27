@@ -21,3 +21,4 @@
     - {role: secrets, tags: [access, bootstrap]}
     - {role: ruby, tags: [tool]}
     - {role: node, tags: [tool]}
+    - {role: vscode, tags: [vscode]}
