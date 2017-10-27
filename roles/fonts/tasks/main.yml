@@ -1,0 +1,4 @@
+- name: Copy the fonts to the Fonts folder
+  copy: src={{ item.src }} dest={{ item.dest }}
+  with_items:
+    - { src: '../vars/', dest: '/Library/Fonts' }

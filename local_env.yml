@@ -21,4 +21,5 @@
     - {role: ruby, tags: [tool]}
     - {role: node, tags: [tool]}
     - {role: git_repos, tags: [repos]}
-    - {role: vscode, tags: [vscode]}
+    - {role: vscode, tags: [dev]}
+    - {role: fonts, tags: [system, design]}
