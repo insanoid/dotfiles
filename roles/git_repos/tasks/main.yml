@@ -1,0 +1,11 @@
+- import_role: name=git_pyenv
+  vars:
+    repo: "git@github.com:insanoid/Apple-Store-Reserve-Monitor.git"
+    version: "{{ latest_python_35 }}"
+    root: "~/Code/Personal/"
+
+- name: SwiftJSONAccelerator project
+  git:
+    repo: "git@github.com:insanoid/SwiftyJSONAccelerator"
+    dest: "~/Code/Personal/SwiftyJSONAccelerator"
+    clone: yes

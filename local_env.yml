@@ -20,4 +20,5 @@
     - {role: secrets, tags: [access, bootstrap]}
     - {role: ruby, tags: [tool]}
     - {role: node, tags: [tool]}
+    - {role: git_repos, tags: [repos]}
     - {role: vscode, tags: [vscode]}
