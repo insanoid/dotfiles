@@ -63,7 +63,7 @@ osx_cask_packages:
   - atom
   - dashlane
   - dropbox
-  - authy-desktop
+  - authy
   - vysor
   - android-file-transfer
   - zoomus
@@ -98,7 +98,7 @@ osx_cask_packages:
   - wwdc
   # Development
   - tower
-  - github-desktop
+  - github #desktop app
 # - mactex
   - hockey
   - cocoarestclient
