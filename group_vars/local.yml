@@ -67,6 +67,7 @@ osx_cask_packages:
   - vysor
   - android-file-transfer
   - zoomus
+  - wavebox
   # Docker
   - docker
 #  - virtualbox # fails to instal..
