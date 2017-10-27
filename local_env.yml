@@ -16,7 +16,6 @@
     - {role: ccat, tags: [tool]}
     - {role: tmux, tags: [tool]}
     - {role: fzf, tags: [tool]}
-    - {role: defaultbrowser, tags: [tool]}
     - {role: osx, when: ansible_os_family == "Darwin"}
     - {role: secrets, tags: [access, bootstrap]}
     - {role: ruby, tags: [tool]}
