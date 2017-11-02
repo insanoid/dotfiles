@@ -134,6 +134,8 @@ npm_global_packages:
   - eslint-plugin-react
   - babel-eslint
   - gulp
+  - npm-check-updates
+  - create-react-app
 
 # Ruby tools, mostly iOS dev stuff.
 ruby_global_gems:
