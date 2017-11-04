@@ -100,11 +100,13 @@ osx_cask_packages:
   # Development
   - tower
   - github #desktop app
+  - android-studio-preview
 # - mactex
   - hockey
   - cocoarestclient
   - weka
   - texpad
+  - macdown
 
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
