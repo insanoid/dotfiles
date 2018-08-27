@@ -108,7 +108,6 @@ osx_cask_packages:
 osx_mas_packages:
   - 585829637  # Todoist
   - 784466108  # ExifPurge
-  - 980953143  # JustExifViewer
   - 409183694  # Keynote
   - 734258109  # Watchdog
   - 476533227  # Prepo
