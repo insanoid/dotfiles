@@ -14,6 +14,8 @@ alias l='ls -1a'
 alias la='ls -la'
 
 alias reload!='. ~/.zshrc'
+alias refresh!='. ~/.zshrc'
+
 alias vi="vim"
 alias v="vim"
 # resize images

@@ -1,7 +1,6 @@
 # Install visual studio extensions.
 vs_code_extensions:
   - Shan.code-settings-sync
-  - WallabyJs.quokka-vscode
   - Zignd.html-css-class-completion
   - christian-kohler.npm-intellisense
   - dbaeumer.vscode-eslint
@@ -10,4 +9,6 @@ vs_code_extensions:
   - joelday.docthis
   - msjsdiag.debugger-for-chrome
   - nodesource.vscode-for-node-js-development-pack
-  - robertohuertasm.vscode-icons
+  - ms-python.python
+  - PKief.material-icon-theme
+  - Equinusocio.vsc-material-theme

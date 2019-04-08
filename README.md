@@ -16,7 +16,9 @@ Getting Started:
 4. Install Git `brew install git`
 5. Install ansible - `brew install ansible`
 6. Install java `Brew cask install java` (depends on your setup)
-7. Run the script `CFLAGS="-I$(brew --prefix openssl)/include" LDFLAGS="-L$(brew --prefix openssl)/lib" ./bin/dot-bootstrap`
+7. Run the script `CFLAGS="-I$(brew --prefix openssl)/include -I$(brew --prefix readline)/include -I$(xcrun --show-sdk-path)/usr/include" LDFLAGS="-L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib" CPPFLAGS="-I$(brew --prefix zlib)/include" ./bin/dot-bootstrap` (https://github.com/pyenv/pyenv/wiki/Common-build-problems#error-the-python-ssl-extension-was-not-compiled-missing-the-openssl-lib)
+
+
 
 ```bash
 # Replace git url with your fork

@@ -7,18 +7,19 @@
   environment:
     PYENV_ROOT: "{{ pyenv_root }}"
   roles:
-    - {role: git, tags: [vcs]}
-    - {role: package_manager, tags: [system]}
-    - {role: zsh, tags: [system, bootstrap]}
-    - {role: python_pyenv, tags: [dev]}
-    - {role: zsh-autoenv, tags: [system]}
-    - {role: exa, tags: [tool]}
-    - {role: ccat, tags: [tool]}
-    - {role: tmux, tags: [tool]}
-    - {role: fzf, tags: [tool]}
-    - {role: osx, when: ansible_os_family == "Darwin"}
-    - {role: secrets, tags: [access, bootstrap]}
+    - {role: git, tags: [vcs, git]}
+    - {role: package_manager, tags: [system, package_manager]}
+    - {role: zsh, tags: [system, bootstrap, zsh]}
+    - {role: zsh-autoenv, tags: [system, zsh-autoenv]}
+    - {role: python_pyenv, tags: [dev, python, python_pyenv]}
+    - {role: exa, tags: [tool, exa]}
+    - {role: ccat, tags: [too, ccat]}
+    - {role: fzf, tags: [tool, fzf]}
+    - {role: osx, when: ansible_os_family == "Darwin", tags: [osx]}
+    - {role: secrets, tags: [access, bootstrap, secrets]}
     - {role: ruby, tags: [tool, ruby]}
-    - {role: node, tags: [tool]}
-    - {role: vscode, tags: [dev]}
-    - {role: fonts, tags: [system, design]}
+    - {role: node, tags: [tool, node]}
+    - {role: vscode, tags: [dev, vscode]}
+    - {role: fonts, tags: [system, design, fonts]}
+    - {role: eatfirst, tags: [dev, eatfirst]}
+    - {role: games, tags: [games]}

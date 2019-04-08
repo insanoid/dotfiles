@@ -1,0 +1,10 @@
+alias py="python"
+alias py3="python3"
+alias ipy="ipython"
+alias ipynb="ipython notebook"
+alias jpnb="jupyter notebook"
+
+alias pywhich="pyenv which"
+alias pyactivate="pyenv activate"
+alias pydeactivate="pyenv deactivate"
+alias pydelete="pyenv uninstall"

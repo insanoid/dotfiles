@@ -1,0 +1,8 @@
+- name: Install Battle.net
+  homebrew_cask: name=battle-net
+  when: ansible_os_family == "Darwin"
+  tags: bootstrap
+
+- name: Install Steam
+  homebrew_cask: name=steam
+  tags: bootstrap

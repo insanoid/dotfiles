@@ -26,6 +26,7 @@ osx_homebrew_packages:
   - wget
   - tree
   - terminal-notifier
+  - pgbadger
   - wifi-password # Get WiFi password from the terminal.
   - httpie # Inline HTTP client to use instead of CURL.
   - rename
@@ -38,6 +39,7 @@ osx_homebrew_packages:
   - tailor
   - xctool
   - hub
+  - fd
 
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
@@ -60,13 +62,11 @@ osx_cask_packages:
   - daisydisk
   - alfred
   - atom
-  - dashlane
   - dropbox
   - vanilla
   - authy
   - android-file-transfer
   - zoomus
-  - wavebox
   # Docker
   - docker
 #  - virtualbox # fails to instal..
@@ -76,13 +76,10 @@ osx_cask_packages:
   - zulip
   # Backup/storage
   - dropbox
-#  - google-drive-file-stream
+  - google-drive-file-stream
   # Media/Music
   - spotify
   - vlc
-  - beardedspice
-  # Notetaking
-  - atom
   # Fonts
   - font-ubuntu
   - font-cousine
@@ -93,6 +90,7 @@ osx_cask_packages:
   - handbrake
   - sketch
   - sketch-toolbox
+  - figma
   # Apple Stuff
   - wwdc
   # Development
@@ -106,7 +104,6 @@ osx_cask_packages:
 # Mac-App-Store-only apps to be installed with mas
 # Use App IDs found with `mas search <name>`
 osx_mas_packages:
-  - 585829637  # Todoist
   - 784466108  # ExifPurge
   - 409183694  # Keynote
   - 734258109  # Watchdog
@@ -122,6 +119,7 @@ osx_mas_packages:
   - 408981434  # iMovie
   - 497799835  # Xcode - to keep it updated
   - 409203825  # Numbers
+  - 552383089  # Dashlane - Password Manager
 
 # Node utilities
 npm_global_packages:
@@ -134,9 +132,12 @@ npm_global_packages:
   - npm-check-updates
   - create-react-app
   - localtunnel
+  - scss
+  - conventional-changelog-cli
 
 # Ruby tools, mostly iOS dev stuff.
 ruby_global_gems:
+  - mechanize # After Ruby 2.4, without this brew will start working.
   - travis
   - CFPropertyList
   - cocoapods
@@ -146,4 +147,19 @@ ruby_global_gems:
   - rake
   - xcodeproj
   - bundler
-  - openssl
+
+pyenv_global_versions:
+  - 3.6.5
+  - 3.5.5
+  - 2.7.15
+
+python3_modules:
+  - youtube-dl # https://pypi.org/project/youtube_dl/
+  - organize-tool # https://pypi.org/project/organize-tool/
+  - keyring # https://pypi.org/project/keyring/
+  - subliminal # https://pypi.org/project/subliminal/
+  - awscli # https://pypi.org/project/awscli/
+  - pgcli # https://pypi.org/project/pgcli/
+  - howdoi # https://pypi.org/project/howdoi/
+  - bumpversion # https://pypi.org/project/bumpversion/
+  - twine # https://pypi.org/project/twine/

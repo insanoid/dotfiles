@@ -1,32 +1,7 @@
-- name: "Install Python {{ latest_python_27 }}"
+- name: "Get latest Python 2.7"
+  shell: "pyenv install --list | grep -i ' 2.7' | grep -v dev | tr -d ' ' | tail -n 1"
+  register: latest_python_2_7
+
+- name: "Install Python {{ latest_python_2_7.stdout }}"
   pyenv:
-    version: "{{ latest_python_27 }}"
-
-- name: virtualenv for IPython
-  pyenv:
-    subcommand: virtualenv
-    version: "{{ latest_python_27 }}"
-    virtualenv_name: ipython2
-
-- name: virtualenv for Python 2 tools
-  pyenv:
-    subcommand: virtualenv
-    version: "{{ latest_python_27 }}"
-    virtualenv_name: tools2
-
-- name: Install ipykernel
-  pip:
-    name: ipykernel
-    state: latest
-    executable: "{{ pyenv_root }}/versions/tools2/bin/pip"
-
-- name: Run ipykernel module
-  command: "{{ pyenv_root }}/versions/tools2/bin/python -m ipykernel install --user"
-  args:
-    creates: "~/Library/Jupyter/kernels/python2"
-
-- name: Install rename
-  pip:
-    name: rename
-    state: latest
-    executable: "{{ pyenv_root }}/versions/tools2/bin/pip"
+    version: "{{ latest_python_2_7.stdout }}"

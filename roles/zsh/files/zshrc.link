@@ -53,3 +53,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init - --no-rehash)"
+
+# added by pipx (https://github.com/pipxproject/pipx)
+export PATH="/Users/karthikeyaudupa/.local/bin:$PATH"

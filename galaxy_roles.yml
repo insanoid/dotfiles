@@ -1,8 +1,18 @@
 # Community roles from https://galaxy.ansible.com/
 # https://docs.ansible.com/ansible/latest/galaxy.html#installing-multiple-roles-from-a-file
 
+# https://github.com/suzuki-shunsuke/ansible-pyenv
 - src: suzuki-shunsuke.pyenv
+  version: v3.2.5
+
+# https://github.com/suzuki-shunsuke/ansible-pyenv-virtualenv
 - src: suzuki-shunsuke.pyenv-virtualenv
+
+# https://github.com/suzuki-shunsuke/ansible-pyenv-module
 - src: suzuki-shunsuke.pyenv-module
-- src: mongrelion.docker
-- src: andrewrothstein.docker-compose
+
+# https://github.com/geerlingguy/ansible-role-docker
+- src: geerlingguy.docker
+
+# https://github.com/gantsign/ansible-role-visual-studio-code
+- src: gantsign.visual-studio-code

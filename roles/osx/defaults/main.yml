@@ -4,6 +4,7 @@
 osx_homebrew_packages:
   - wget
   - tree
+  - gitup
 
 # Mac Apps to be installed with homebrew-cask
 osx_cask_packages:
