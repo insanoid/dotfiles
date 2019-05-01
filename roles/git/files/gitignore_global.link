@@ -70,3 +70,7 @@ xcodebuild.log
 *.gcda
 *.gcno
 /upload_dsym_results
+
+.python-version
+.autoxsh
+.autoenv

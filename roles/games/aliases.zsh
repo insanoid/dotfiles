@@ -1,0 +1,1 @@
+update_elvui="cd '/Applications/World of Warcraft/_retail_/Interface/Addons' && rm -rf elvui-source ElvUI  ElvUI_Config && git clone https://git.tukui.org/elvui/elvui.git && mv elvui elvui-source && cp -rf elvui-source/* . && rm -rf elvui-source && cd ~"

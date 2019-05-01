@@ -5,4 +5,6 @@
 
 - name: Install Steam
   homebrew_cask: name=steam
-  tags: bootstrap
+
+- name: Install Twitch
+  homebrew_cask: name=twitch

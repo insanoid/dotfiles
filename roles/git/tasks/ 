@@ -1,5 +1,6 @@
 - include_tasks: "{{ ansible_os_family | lower }}.yml"
 
+# git config --global core.excludesfile ~/.gitignore_global
 - name: Link global gitignore file
   file:
     src: "{{ dotfiles_home }}/roles/git/files/gitignore_global.link"
